@@ -1,0 +1,13 @@
+<div class="quiz-wrapper">
+  <div *ngFor="let question of questions" class="quiz">
+    <app-quiz
+      [question]="question"
+      [(ngModel)]="question.selectedOption"
+    ></app-quiz>
+  </div>
+  
+  <div>
+    <button mat-raised-button color="primary" (click)="submit()">Save & Continue</button>
+  </div>
+  
+</div>

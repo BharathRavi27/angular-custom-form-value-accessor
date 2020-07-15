@@ -1,0 +1,14 @@
+.quiz-wrapper {
+  padding: 1rem ;
+}
+.quiz {
+  margin-right: 1rem 0;
+  width: 50%;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .quiz {
+    width: 100%;
+  }
+}

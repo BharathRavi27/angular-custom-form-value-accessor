@@ -1,0 +1,20 @@
+<mat-card class="card">
+  <mat-card-content>
+    <label id="options-label"
+      ><b>{{ question.label }}</b></label
+    >
+    <mat-radio-group
+      aria-labelledby="options-label"
+      class="options"
+      [(ngModel)]="value"
+    >
+      <mat-radio-button
+        *ngFor="let option of question.options"
+        [value]="option.id"
+        class="option"
+      >
+        {{ option.label }}
+      </mat-radio-button>
+    </mat-radio-group>
+  </mat-card-content>
+</mat-card>
