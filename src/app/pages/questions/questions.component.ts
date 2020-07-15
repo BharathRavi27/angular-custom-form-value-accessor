@@ -9,7 +9,7 @@ export class QuestionsComponent implements OnInit {
   questions: any[] = [
     {
       id: 1,
-      label: 'Who won 2019 Cricket world cup?',
+      label: 'Which country won 2019 cricket world cup title?',
       options: [
         {
           id: 1,
